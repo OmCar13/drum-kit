@@ -8,7 +8,6 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
@@ -21,7 +20,7 @@ footer {
 }
 
 .a {
-  background-image: url(images//tom2.png);
+  background-image: url(images/tom2.png);
 }
 
 .s {
@@ -53,15 +52,6 @@ footer {
   opacity: 0.8;
 }
 
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
-}
-
 .drum {
   cursor: pointer;
   outline: none;
@@ -79,9 +69,12 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+  background-size: cover;
   box-shadow: 0 9px #999;
 }
-.drum:active, .drum:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+
+.drum:active, .drum.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+  transform: translateY(6px);
 }

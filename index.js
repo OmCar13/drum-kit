@@ -17,6 +17,15 @@ document.addEventListener("keydown", function(event){
     var keyPressed = event.key;
     makeSound(keyPressed);
 
+    var drumButton = document.querySelector("." + keyPressed);
+    if (drumButton) {
+        drumButton.classList.add("pressed");
+
+        setTimeout(() => {
+            drumButton.classList.remove("pressed");
+        }, 100);
+    }
+
 })
 
 // playing sound 
